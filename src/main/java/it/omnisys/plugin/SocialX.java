@@ -1,7 +1,6 @@
 package it.omnisys.plugin;
 
 import it.omnisys.plugin.Commands.YouTubeCMD;
-import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;

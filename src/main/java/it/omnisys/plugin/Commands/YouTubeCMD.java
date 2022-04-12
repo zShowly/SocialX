@@ -1,8 +1,5 @@
 package it.omnisys.plugin.Commands;
 
-import me.clip.placeholderapi.PlaceholderAPI;
-import me.clip.placeholderapi.commands.PlaceholderCommand;
-import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
