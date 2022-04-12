@@ -30,7 +30,7 @@ public class YouTubeCMD implements CommandExecutor {
                 }
             }
         } else {
-            plugin.getServer().getConsoleSender().sendMessage(color(plugin.getMessageConfig().getString("ConsoleBlocker")));
+            plugin.getServer().getConsoleSender().sendMessage(color(plugin.getMessageConfig().getString("ConsoleBocker")));
         }
         return true;
     }

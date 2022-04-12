@@ -1,7 +1,6 @@
 package it.omnisys.plugin;
 
 import it.omnisys.plugin.Commands.YouTubeCMD;
-import it.omnisys.plugin.Managers.PlaceholderManager;
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.InvalidConfigurationException;
@@ -49,7 +48,6 @@ public final class SocialX extends JavaPlugin {
             getCommand("youtube").setExecutor(new YouTubeCMD());
             commandlist.put("youtube", "Sends the youtube channel to the sender player");
 
-            new PlaceholderManager().register();
         } else {
             getServer().getConsoleSender().sendMessage(color(
                     "    &b_____            _       __   _  __    \n" +
