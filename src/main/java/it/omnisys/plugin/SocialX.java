@@ -36,11 +36,11 @@ public final class SocialX extends JavaPlugin {
 
 
             getServer().getConsoleSender().sendMessage(color(
-                    "    &b_____            _       __   _  __    \n" +
-                            "   / ___/____  _____(_)___ _/ /  | |/ /   &aRunning Version &8" + getDescription().getVersion() + "\n" +
-                            "   \\__ \\/ __ \\/ ___/ / __ `/ /   |   /  &aPlugin By &8" + getDescription().getAuthors() + "\n" +
-                            "  ___/ / /_/ / /__/ / /_/ / /   /   |\n" +
-                            " /____/\\____/\\___/_/\\__,_/_/   /_/|_|\n&r"));
+                    "    \n&b_____            _       __   _  __    \n" +
+                    "   / ___/____  _____(_)___ _/ /  | |/ /   &aRunning Version &8" + getDescription().getVersion() + "\n" +
+                    "   \\__ \\/ __ \\/ ___/ / __ `/ /   |   /  &aPlugin By &8" + getDescription().getAuthors() + "\n" +
+                    "  ___/ / /_/ / /__/ / /_/ / /   /   |\n" +
+                    " /____/\\____/\\___/_/\\__,_/_/   /_/|_|\n&r"));
 
             createMessageConfig();
 
@@ -49,6 +49,7 @@ public final class SocialX extends JavaPlugin {
 
             getCommand("twitch").setExecutor(new TwitchCMD());
             commandlist.put("twitch", "Sends the twitch channel to the sender player");
+
 
     }
     @Override

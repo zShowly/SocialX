@@ -10,7 +10,7 @@
 # Version: 1.0.0-Alpha
 
 ConsoleBlocker: "&cYou can't execute this command from console"
-YoutubeCommandMessage: "&cYoutube: %youtubeLink%"
-TwitchCommandMessage: "&5Twitch: %twitchLink%"
+YoutubeCommandMessage: "&cYoutube: &f%youtubeLink%"
+TwitchCommandMessage: "&5Twitch: &f%twitchLink%"
 NoPermsMessage: "&cYou don't have permission to execute this command!"
 AdminNotifyMessage: "&c%player% tried to use %command%, but he/she doesn't have permission!"
