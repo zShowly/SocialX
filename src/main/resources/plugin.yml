@@ -12,16 +12,15 @@ commands:
   youtube:
     description: Sends the youtube channel to the sender player
     usage: /<command>
-    permission: socialx.command.youtube
   twitch:
     description: Sends the twitch channel to the sender player
     usage: /<command>
-    permission: socialx.command.twitch
   website:
     description: Sends the website to the sender player
     usage: /<command>
-    permission: socialx.command.website
   store:
     description: Sends the store to the sender player
     usage: /<command>
-    permission: socialx.command.store
+  tiktok:
+    description: Sends the tiktok channel to the sender player
+    usage: /<command>

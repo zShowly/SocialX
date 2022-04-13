@@ -1,6 +1,8 @@
 package it.omnisys.plugin;
 
+import it.omnisys.plugin.Commands.TiktokCMD;
 import it.omnisys.plugin.Commands.TwitchCMD;
+import it.omnisys.plugin.Commands.WebsiteCMD;
 import it.omnisys.plugin.Commands.YouTubeCMD;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.InvalidConfigurationException;
@@ -50,7 +52,11 @@ public final class SocialX extends JavaPlugin {
             getCommand("twitch").setExecutor(new TwitchCMD());
             commandlist.put("twitch", "Sends the twitch channel to the sender player");
 
+            getCommand("website").setExecutor(new WebsiteCMD());
+            commandlist.put("website", "Sends the website link to the sender player");
 
+            getCommand("tiktok").setExecutor(new TiktokCMD());
+            commandlist.put("tiktok", "Sends the tiktok channel to the sender player");
     }
     @Override
     public void onDisable() {
