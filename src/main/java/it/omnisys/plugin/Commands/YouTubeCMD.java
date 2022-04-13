@@ -4,6 +4,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 
 import static it.omnisys.plugin.SocialX.plugin;
@@ -28,7 +29,7 @@ public class YouTubeCMD implements CommandExecutor {
                     }
                 }
             }
-        } else {
+        } else if(sender instanceof ConsoleCommandSender) {
             plugin.getServer().getConsoleSender().sendMessage(color(plugin.getMessageConfig().getString("ConsoleBocker")));
         }
         return true;

@@ -11,5 +11,7 @@
 
 YoutubeChannel: "https://youtube.com/example"
 TwitchChannel: "https://twitch.tv/example"
+TikTokChannel: "https://tiktok.com/example"
+WebsiteLink: "https://www.example.com/"
 
 debug: false

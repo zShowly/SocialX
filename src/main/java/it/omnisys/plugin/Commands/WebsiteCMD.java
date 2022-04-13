@@ -10,20 +10,20 @@ import org.bukkit.entity.Player;
 import static it.omnisys.plugin.SocialX.plugin;
 import static it.omnisys.plugin.Utils.ColorUtils.color;
 
-public class TwitchCMD implements CommandExecutor {
+public class WebsiteCMD implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if(sender instanceof Player) {
             Player p = (Player) sender;
-            if (p.hasPermission("socialx.command.twitch")) {
+            if (p.hasPermission("socialx.command.website")) {
 
-                p.sendMessage(color(plugin.getMessageConfig().getString("TwitchCommandMessage").replaceAll("%twitchLink%", plugin.getConfig().getString("TwitchChannel") )));
+                p.sendMessage(color(plugin.getMessageConfig().getString("WebsiteCommandMessage").replaceAll("%websiteLink%", plugin.getConfig().getString("WebsiteLink") )));
             } else {
                 p.sendMessage(color(plugin.getMessageConfig().getString("NoPermsMessage")));
                 if(plugin.getConfig().getBoolean("debug")) {
                     for (Player player : Bukkit.getOnlinePlayers()) {
                         if (player.hasPermission("socialx.alerts")) {
-                            player.sendMessage(plugin.getMessageConfig().getString("AdminNotifyMessage").replaceAll("%player%", p.getName()).replaceAll("%command%", "/twitch"));
+                            player.sendMessage(plugin.getMessageConfig().getString("AdminNotifyMessage").replaceAll("%player%", p.getName()).replaceAll("%command%", "/website"));
                         }
                     }
                 }
