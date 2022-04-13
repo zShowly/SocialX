@@ -1,5 +1,6 @@
 package it.omnisys.plugin;
 
+import it.omnisys.plugin.Commands.TwitchCMD;
 import it.omnisys.plugin.Commands.YouTubeCMD;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.InvalidConfigurationException;
@@ -27,8 +28,7 @@ public final class SocialX extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
-
-        if(Bukkit.getPluginManager().isPluginEnabled("PlaceholderAPI")) {
+        
             plugin = this;
 
             saveDefaultConfig();
@@ -47,16 +47,9 @@ public final class SocialX extends JavaPlugin {
             getCommand("youtube").setExecutor(new YouTubeCMD());
             commandlist.put("youtube", "Sends the youtube channel to the sender player");
 
-        } else {
-            getServer().getConsoleSender().sendMessage(color(
-                    "    &b_____            _       __   _  __    \n" +
-                    "   / ___/____  _____(_)___ _/ /  | |/ /   &cCould not enable SocialX due to an error\n" +
-                    "   \\__ \\/ __ \\/ ___/ / __ `/ /   |   /  &cRegistering placeholders with PlaceholderAPI\n" +
-                    "  ___/ / /_/ / /__/ / /_/ / /   /   |\n" +
-                    " /____/\\____/\\___/_/\\__,_/_/   /_/|_|\n&r"));
+            getCommand("twitch").setExecutor(new TwitchCMD());
+            commandlist.put("twitch", "Sends the twitch channel to the sender player");
         }
-    }
-
     @Override
     public void onDisable() {
         // Plugin shutdown logic
