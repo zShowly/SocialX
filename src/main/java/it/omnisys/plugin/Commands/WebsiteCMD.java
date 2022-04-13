@@ -19,6 +19,7 @@ public class WebsiteCMD implements CommandExecutor {
                 if (p.hasPermission("socialx.command.website")) {
 
                     p.sendMessage(color(plugin.getMessageConfig().getString("WebsiteCommandMessage").replaceAll("%websiteLink%", plugin.getConfig().getString("WebsiteLink"))));
+
                 } else {
                     p.sendMessage(color(plugin.getMessageConfig().getString("NoPermsMessage")));
                     if (plugin.getConfig().getBoolean("debug")) {
