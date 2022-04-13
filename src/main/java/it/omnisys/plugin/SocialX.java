@@ -49,7 +49,8 @@ public final class SocialX extends JavaPlugin {
 
             getCommand("twitch").setExecutor(new TwitchCMD());
             commandlist.put("twitch", "Sends the twitch channel to the sender player");
-        }
+
+    }
     @Override
     public void onDisable() {
         // Plugin shutdown logic

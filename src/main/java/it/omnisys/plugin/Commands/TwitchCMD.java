@@ -15,6 +15,7 @@ public class TwitchCMD implements CommandExecutor {
         if(sender instanceof Player) {
             Player p = (Player) sender;
             if (p.hasPermission("socialx.command.twitch")) {
+
                 p.sendMessage(color(plugin.getMessageConfig().getString("TwitchCommandMessage").replaceAll("%twitchLink%", plugin.getConfig().getString("TwitchChannel") )));
             } else {
                 p.sendMessage(color(plugin.getMessageConfig().getString("NoPermsMessage")));
