@@ -25,7 +25,7 @@ public class TiktokCMD implements CommandExecutor {
                     if (plugin.getConfig().getBoolean("debug")) {
                         for (Player player : Bukkit.getOnlinePlayers()) {
                             if (player.hasPermission("socialx.alerts")) {
-                                player.sendMessage(plugin.getMessageConfig().getString("AdminNotifyMessage").replaceAll("%player%", p.getName()).replaceAll("%command%", "/tiktok"));
+                                player.sendMessage(color(plugin.getMessageConfig().getString("AdminNotifyMessage").replaceAll("%player%", p.getName()).replaceAll("%command%", "/tiktok")));
                             }
                         }
                     }

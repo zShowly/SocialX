@@ -25,7 +25,7 @@ public class YouTubeCMD implements CommandExecutor {
 
                         for (Player player : Bukkit.getOnlinePlayers()) {
                             if (player.hasPermission("socialx.alerts")) {
-                                player.sendMessage(plugin.getMessageConfig().getString("AdminNotifyMessage").replaceAll("%player%", p.getName()).replaceAll("%command%", "/youtube"));
+                                player.sendMessage(color(plugin.getMessageConfig().getString("AdminNotifyMessage").replaceAll("%player%", p.getName()).replaceAll("%command%", "/youtube")));
                             }
                         }
                     }
