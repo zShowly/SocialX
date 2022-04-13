@@ -38,9 +38,11 @@ public class SocialXCMD implements CommandExecutor {
                 p.sendMessage(color(" "));
                 p.sendMessage(color(" &b/socialx reload &7- Reloads the configs"));
                 p.sendMessage(color(" &b/socialx info &7- Sends debug informations"));
-                for(int i = 0; i < commandlist.size(); i++) {
-                    p.sendMessage(color(" &b/" + commandlist.get(i)));
-                }
+                p.sendMessage(color(" &b/store &7- Sends the store link"));
+                p.sendMessage(color(" &b/tiktok &7- Sends the tiktok channel"));
+                p.sendMessage(color(" &b/twitch &7- Sends the twitch channel"));
+                p.sendMessage(color(" &b/website &7- Sends the website link"));
+                p.sendMessage(color(" &b/youtube &7- Sends the youtube channel"));
             }
         }
 

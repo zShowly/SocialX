@@ -18,7 +18,7 @@ public class StoreCMD implements CommandExecutor {
             if (plugin.getConfig().getBoolean("youtube")) {
                 if (p.hasPermission("socialx.command.store")) {
 
-                    p.sendMessage(color(plugin.getMessageConfig().getString("StoreCommandMessage").replaceAll("%tiktokLink%", plugin.getConfig().getString("StoreLink"))));
+                    p.sendMessage(color(plugin.getMessageConfig().getString("StoreCommandMessage").replaceAll("%storeLink%", plugin.getConfig().getString("StoreLink"))));
                 } else {
                     p.sendMessage(color(plugin.getMessageConfig().getString("NoPermsMessage")));
 
