@@ -14,6 +14,8 @@ YoutubeCommandMessage: "&cYoutube: &f%youtubeLink%"
 TwitchCommandMessage: "&5Twitch: &f%twitchLink%"
 TiktokCommandMessage: "&dTiktok: &b%tiktokLink%"
 WebsiteCommandMessage: "&bWebSite: &f%websiteLink%"
+StoreCommandMessage: "&fStore: %storeLink%"
 NoPermsMessage: "&cYou don't have permission to execute this command!"
 AdminNotifyMessage: "&c%player% tried to use %command%, but he/she doesn't have permission!"
+CommandNotEnabled: "&cThis command is disabled from configuration!"
 

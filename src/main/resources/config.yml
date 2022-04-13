@@ -13,5 +13,12 @@ YoutubeChannel: "https://youtube.com/example"
 TwitchChannel: "https://twitch.tv/example"
 TikTokChannel: "https://tiktok.com/example"
 WebsiteLink: "https://www.example.com/"
+StoreLink: "https://store.example.com/"
+
+youtube: true
+twitch: true
+tiktok: true
+website: true
+store: true
 
 debug: false

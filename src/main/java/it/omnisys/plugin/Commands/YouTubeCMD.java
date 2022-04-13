@@ -15,19 +15,23 @@ public class YouTubeCMD implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if(sender instanceof Player) {
             Player p = (Player) sender;
-            if (p.hasPermission("socialx.command.youtube")) {
-                p.sendMessage(color(plugin.getMessageConfig().getString("YoutubeCommandMessage").replaceAll("%youtubeLink%", plugin.getConfig().getString("YoutubeChannel") )));
-            } else {
-                p.sendMessage(color(plugin.getMessageConfig().getString("NoPermsMessage")));
+            if(plugin.getConfig().getBoolean("youtube")) {
+                if (p.hasPermission("socialx.command.youtube")) {
+                    p.sendMessage(color(plugin.getMessageConfig().getString("YoutubeCommandMessage").replaceAll("%youtubeLink%", plugin.getConfig().getString("YoutubeChannel"))));
+                } else {
+                    p.sendMessage(color(plugin.getMessageConfig().getString("NoPermsMessage")));
 
-                if(plugin.getConfig().getBoolean("debug")) {
+                    if (plugin.getConfig().getBoolean("debug")) {
 
-                    for (Player player : Bukkit.getOnlinePlayers()) {
-                        if (player.hasPermission("socialx.alerts")) {
-                            player.sendMessage(plugin.getMessageConfig().getString("AdminNotifyMessage").replaceAll("%player%", p.getName()).replaceAll("%command%", "/youtube"));
+                        for (Player player : Bukkit.getOnlinePlayers()) {
+                            if (player.hasPermission("socialx.alerts")) {
+                                player.sendMessage(plugin.getMessageConfig().getString("AdminNotifyMessage").replaceAll("%player%", p.getName()).replaceAll("%command%", "/youtube"));
+                            }
                         }
                     }
                 }
+            } else {
+                p.sendMessage(color(plugin.getMessageConfig().getString("CommandNotEnabled")));
             }
         } else if(sender instanceof ConsoleCommandSender) {
             plugin.getServer().getConsoleSender().sendMessage(color(plugin.getMessageConfig().getString("ConsoleBocker")));
