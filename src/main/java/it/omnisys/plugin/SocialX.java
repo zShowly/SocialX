@@ -57,6 +57,8 @@ public final class SocialX extends JavaPlugin {
 
             getCommand("store").setExecutor(new StoreCMD());
             commandlist.put("store", "Sends the store link to the sender player");
+
+            getCommand("socialx").setExecutor(new SocialXCMD());
     }
     @Override
     public void onDisable() {

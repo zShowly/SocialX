@@ -9,6 +9,8 @@
 #
 # Version: 1.0.0-Alpha
 
+License: "Your-License-Here"
+
 YoutubeChannel: "https://youtube.com/example"
 TwitchChannel: "https://twitch.tv/example"
 TikTokChannel: "https://tiktok.com/example"
