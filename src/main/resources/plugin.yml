@@ -24,3 +24,6 @@ commands:
   tiktok:
     description: Sends the tiktok channel to the sender player
     usage: /<command>
+  socialx:
+    description: Main Command
+    usage: /<command>

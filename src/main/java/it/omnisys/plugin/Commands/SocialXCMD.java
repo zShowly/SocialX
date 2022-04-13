@@ -11,6 +11,7 @@ import java.awt.*;
 
 import static it.omnisys.plugin.SocialX.plugin;
 import static it.omnisys.plugin.Utils.ColorUtils.color;
+import static it.omnisys.plugin.SocialX.commandlist;
 
 public class SocialXCMD implements CommandExecutor {
     @Override
@@ -31,6 +32,14 @@ public class SocialXCMD implements CommandExecutor {
                 if(p.hasPermission("socialx.command.info")) {
                     p.sendMessage(color("&bThis server is running SocialX v" + plugin.getDescription().getVersion() + " on \n"
                             + plugin.getServer().getBukkitVersion() + "."));
+                }
+            } else if (args.length == 1 && args[0].equalsIgnoreCase("help")) {
+                p.sendMessage(color("&8&m-----------------&r &b&lSOCIAL X &8&m-----------------"));
+                p.sendMessage(color(" "));
+                p.sendMessage(color(" &b/socialx reload &7- Reloads the configs"));
+                p.sendMessage(color(" &b/socialx info &7- Sends debug informations"));
+                for(int i = 0; i < commandlist.size(); i++) {
+                    p.sendMessage(color(" &b/" + commandlist.get(i)));
                 }
             }
         }

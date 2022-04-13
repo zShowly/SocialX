@@ -22,7 +22,7 @@ public final class SocialX extends JavaPlugin {
     private File messageConfigFile;
     private FileConfiguration messageConfig;
 
-    HashMap<String, String> commandlist = new HashMap<>();
+    public static HashMap<String, String> commandlist = new HashMap<>();
 
     @Override
     public void onEnable() {
@@ -59,6 +59,7 @@ public final class SocialX extends JavaPlugin {
             commandlist.put("store", "Sends the store link to the sender player");
 
             getCommand("socialx").setExecutor(new SocialXCMD());
+            commandlist.put("socialx", "Main Command");
     }
     @Override
     public void onDisable() {
