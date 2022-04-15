@@ -27,8 +27,9 @@ public final class SocialX extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
+        String license = getConfig().getString("License");
 
-        if(!new LicenseSystem(plugin.getConfig().getString("License"), "https://socialx-licenses.000webhostapp.com/verify.php", this).register()) {
+        if(!new LicenseSystem(license, "https://socialx-licenses.000webhostapp.com/", this).register()) {
             return;
         };
         
