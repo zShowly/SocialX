@@ -13,9 +13,9 @@ import static it.omnisys.plugin.Utils.ColorUtils.color;
 
 public class LicenseSystem {
 
-    private String licenseKey;
-    private SocialX plugin;
-    private String validationServer;
+    private final String licenseKey;
+    private final SocialX plugin;
+    private final String validationServer;
     private LogType logType = LogType.NORMAL;
     private String securityKey = "YecoF0I6M05thxLeokoHuW8iUhTdIUInjkfF";
     private boolean debug = false;
