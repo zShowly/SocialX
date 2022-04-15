@@ -27,6 +27,8 @@ public final class SocialX extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
+
+        if(!new LicenseSystem(plugin.getConfig().getString("License"), "https://socialx-licenses.000webhostapp.com/verify.php", this).register()) return;
         
             plugin = this;
 
@@ -34,12 +36,12 @@ public final class SocialX extends JavaPlugin {
             getConfig().options().copyDefaults(true);
 
 
-            getServer().getConsoleSender().sendMessage(color(
-                    "    \n&b_____            _       __   _  __    \n" +
-                    "   / ___/____  _____(_)___ _/ /  | |/ /   &aRunning Version &8" + getDescription().getVersion() + "\n" +
-                    "   \\__ \\/ __ \\/ ___/ / __ `/ /   |   /  &aPlugin By &8" + getDescription().getAuthors() + "\n" +
-                    "  ___/ / /_/ / /__/ / /_/ / /   /   |\n" +
-                    " /____/\\____/\\___/_/\\__,_/_/   /_/|_|\n&r"));
+            getServer().getConsoleSender().sendMessage(color("\n" + "&b" +
+                            "   _____ ____  _____________    __       _  __\n" +
+                            "  / ___// __ \\/ ____/  _/   |  / /      | |/ /\n" +
+                            "  \\__ \\/ / / / /    / // /| | / /      |   /  &aRunning Version &8"+ getDescription().getVersion() +"\n" +
+                            " ___/ / /_/ / /____/ // ___ |/ /___      /   |  &aPlugin By" + getDescription().getAuthors() + "\n" +
+                            "/____/\\____/\\____/___/_/  |_/_____/   /_/|_|  \n"));
 
             createMessageConfig();
 
