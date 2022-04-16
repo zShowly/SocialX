@@ -1,0 +1,32 @@
+name: SocialX
+version: '1.0.0-Beta'
+main: it.omnisys.plugin.SocialX
+api-version: 1.16
+load: STARTUP
+authors:
+  - GX_Regent
+  - Sgattix
+description: SocialX is a plugin for social commands and websites like YouTube, Twitch, Tiktok, SpigotMC, Bukkit, MC-Market
+website: http://store.omnicraft.it/
+commands:
+  youtube:
+    description: Sends the youtube channel to the sender player
+    usage: /<command>
+  twitch:
+    description: Sends the twitch channel to the sender player
+    usage: /<command>
+  website:
+    description: Sends the website to the sender player
+    usage: /<command>
+  store:
+    description: Sends the store to the sender player
+    usage: /<command>
+  tiktok:
+    description: Sends the tiktok channel to the sender player
+    usage: /<command>
+  socialx:
+    description: Main Command
+    usage: /<command>
+  discord:
+    description: Sends the discord link to the sender player
+    usage: /<command>

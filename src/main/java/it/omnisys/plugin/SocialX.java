@@ -31,23 +31,17 @@ public final class SocialX extends JavaPlugin {
         getConfig().options().copyDefaults(true);
         createMessageConfig();
 
-        String license = getConfig().getString("License");
-
-        if(!new LicenseSystem(license, "https://socialx-licenses.000webhostapp.com/verify.php", this).register()) {
-            return;
-        };
-
             plugin = this;
 
             String ver = getDescription().getVersion();
             String authors = String.valueOf(getDescription().getAuthors());
 
             getServer().getConsoleSender().sendMessage(color("\n" + "&b" +
-                            "   _____ ____  _____________    __       _  __\n" +
-                            "  / ___// __ \\/ ____/  _/   |  / /      | |/ /\n" +
-                            "  \\__ \\/ / / / /    / // /| | / /      |   /     &aRunning Version &8v" + ver + "\n" +
-                            " ___/ / /_/ / /____/ // ___ |/ /___      /   |     &aPlugin By" + authors.replace("[GX_Regent, Sgattix]", "GX_Regent & Sgattix") + "\n" +
-                            "/____/\\____/\\____/___/_/  |_/_____/   /_/|_|  \n"));
+                            "&b   _____ ____  _____________    __       _  __&r\n" +
+                            "&b  / ___// __ \\/ ____/  _/   |  / /      | |/ /&r\n" +
+                            "&b  \\__ \\/ / / / /    / // /| | / /      |   /     &aRunning version &8v" + ver + "&r\n" +
+                            "&b ___/ / /_/ / /____/ // ___ |/ /___      /   |     &aPlugin By " + authors.replace("[GX_Regent, Sgattix]", "GX_Regent & Sgattix") + "&r\n" +
+                            "&b/____/\\____/\\____/___/_/  |_/_____/   /_/|_|  &r\n"));
 
 
             getCommand("youtube").setExecutor(new YouTubeCMD());
@@ -78,11 +72,11 @@ public final class SocialX extends JavaPlugin {
         String ver = getDescription().getVersion();
         String authors = String.valueOf(getDescription().getAuthors());
         getServer().getConsoleSender().sendMessage(color(
-                "   _____ ____  _____________    __       _  __\n" +
-                "  / ___// __ \\/ ____/  _/   |  / /      | |/ /\n" +
-                "  \\__ \\/ / / / /    / // /| | / /      |   /     &cDisabled &8v" + ver + "\n" +
-                " ___/ / /_/ / /____/ // ___ |/ /___      /   |     &aPlugin By" + authors.replace("[GX_Regent, Sgattix]", "GX_Regent & Sgattix") + "\n" +
-                "/____/\\____/\\____/___/_/  |_/_____/   /_/|_|  \n"));
+                "&b   _____ ____  _____________    __       _  __ &r\n" +
+                "&b  / ___// __ \\/ ____/  _/   |  / /      | |/ /&r\n" +
+                "&b  \\__ \\/ / / / /    / // /| | / /      |   /     &cDisabled &8v" + ver + "&r\n" +
+                "&b ___/ / /_/ / /____/ // ___ |/ /___      /   |     &aPlugin By " + authors.replace("[GX_Regent, Sgattix]", "GX_Regent & Sgattix") + "&r\n" +
+                "&b/____/\\____/\\____/___/_/  |_/_____/   /_/|_|  &r\n"));
     }
 
 

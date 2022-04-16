@@ -1,0 +1,23 @@
+#    _____            _       __   _  __
+#   / ___/____  _____(_)___ _/ /  | |/ /
+#   \__ \/ __ \/ ___/ / __ `/ /   |   /
+#  ___/ / /_/ / /__/ / /_/ / /   /   |
+# /____/\____/\___/_/\__,_/_/   /_/|_|
+#
+# Plugin Developed By GX_Regent-2.0 & Sgattix
+# Messages Config
+#
+# Version: 1.0.0-Alpha
+
+ConsoleBlocker: "&cYou can't execute this command from console"
+YoutubeCommandMessage: "&cYoutube: &f%youtubeLink%"
+TwitchCommandMessage: "&5Twitch: &f%twitchLink%"
+TiktokCommandMessage: "&dTiktok: &b%tiktokLink%"
+WebsiteCommandMessage: "&bWebSite: &f%websiteLink%"
+StoreCommandMessage: "&fStore: %storeLink%"
+DiscordCommandMessage: "&9Discord: %discordLink%"
+NoPermsMessage: "&cYou don't have permission to execute this command!"
+AdminNotifyMessage: "&c%player% tried to use %command%, but he/she doesn't have permission!"
+CommandNotEnabled: "&cThis command is disabled from configuration!"
+ConfigReloadedMessage: "&aConfig Reloaded!"
+
