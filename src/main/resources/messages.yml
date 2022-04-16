@@ -7,7 +7,7 @@
 # Plugin Developed By GX_Regent-2.0 & Sgattix
 # Messages Config
 #
-# Version: 1.0.0-Alpha
+# Version: 1.0.0-Beta
 
 ConsoleBlocker: "&cYou can't execute this command from console"
 YoutubeCommandMessage: "&cYoutube: &f%youtubeLink%"

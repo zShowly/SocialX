@@ -7,10 +7,15 @@
 # Plugin Developed By GX_Regent-2.0 & Sgattix
 # Main Config
 #
-# Version: 1.0.0-Alpha
+# Version: 1.0.0-Beta
 
-License: "Your-License-Here"
+# Each of this options changes the value in the messages config that is defined
+# like %<social>Link% Ex. %youtubeLink%.
+# You can customise them as you like
 
+  #################################################################
+ #                          LINKS CONFIGURATION                  #
+#################################################################
 YoutubeChannel: "https://youtube.com/example"
 TwitchChannel: "https://twitch.tv/example"
 TikTokChannel: "https://tiktok.com/example"
@@ -18,6 +23,13 @@ WebsiteLink: "https://www.example.com/"
 StoreLink: "https://store.example.com/"
 DiscordLink: "https://discord.example.com/"
 
+# Here you can enable/disable the commands that are
+# available in game. Ex. you toggle to false the
+# Youtube command, it will be blocked in game
+
+  #################################################################
+ #                       COMMAND TOGGLING                        #
+#################################################################
 youtube: true
 twitch: true
 tiktok: true
@@ -25,4 +37,11 @@ website: true
 store: true
 discord: true
 
+# If you toggle on this mode it will send to players that have the
+# socialx.alerts permission if a player executes a command without its
+# permission. By default is toggled to false.
+
+  ###############################################################
+ #                        DEBUG MODE                           #
+###############################################################
 debug: false
