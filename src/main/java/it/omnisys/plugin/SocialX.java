@@ -39,13 +39,14 @@ public final class SocialX extends JavaPlugin {
 
             plugin = this;
 
-
+            String ver = getDescription().getVersion();
+            String authors = String.valueOf(getDescription().getAuthors());
 
             getServer().getConsoleSender().sendMessage(color("\n" + "&b" +
                             "   _____ ____  _____________    __       _  __\n" +
                             "  / ___// __ \\/ ____/  _/   |  / /      | |/ /\n" +
-                            "  \\__ \\/ / / / /    / // /| | / /      |   /  &aRunning Version &8"+ getDescription().getVersion() +"\n" +
-                            " ___/ / /_/ / /____/ // ___ |/ /___      /   |  &aPlugin By" + getDescription().getAuthors() + "\n" +
+                            "  \\__ \\/ / / / /    / // /| | / /      |   /     &aRunning Version &8v" + ver + "\n" +
+                            " ___/ / /_/ / /____/ // ___ |/ /___      /   |     &aPlugin By" + authors.replace("[GX_Regent, Sgattix]", "GX_Regent & Sgattix") + "\n" +
                             "/____/\\____/\\____/___/_/  |_/_____/   /_/|_|  \n"));
 
 
@@ -73,12 +74,15 @@ public final class SocialX extends JavaPlugin {
     @Override
     public void onDisable() {
         // Plugin shutdown logic
+
+        String ver = getDescription().getVersion();
+        String authors = String.valueOf(getDescription().getAuthors());
         getServer().getConsoleSender().sendMessage(color(
-                "    &b_____            _       __   _  __    \n" +
-                "   / ___/____  _____(_)___ _/ /  | |/ /   &cDisabled " + getDescription().getVersion() +"\n" +
-                "   \\__ \\/ __ \\/ ___/ / __ `/ /   |   /  &aPlugin By &8" +   getDescription().getAuthors() + "\n" +
-                "  ___/ / /_/ / /__/ / /_/ / /   /   |\n" +
-                " /____/\\____/\\___/_/\\__,_/_/   /_/|_|\n&r"));
+                "   _____ ____  _____________    __       _  __\n" +
+                "  / ___// __ \\/ ____/  _/   |  / /      | |/ /\n" +
+                "  \\__ \\/ / / / /    / // /| | / /      |   /     &cDisabled &8v" + ver + "\n" +
+                " ___/ / /_/ / /____/ // ___ |/ /___      /   |     &aPlugin By" + authors.replace("[GX_Regent, Sgattix]", "GX_Regent & Sgattix") + "\n" +
+                "/____/\\____/\\____/___/_/  |_/_____/   /_/|_|  \n"));
     }
 
 
