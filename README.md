@@ -1,5 +1,5 @@
 ![img](https://i.imgur.com/Vx7VJdi.png)<br><br>
-<a href="https://spigotmc.org/" target="blank">![img](https://i.imgur.com/cCy5qxL.png)</a> <br><br>
+<a href="https://www.spigotmc.org/resources/socialx.101433/" target="blank">![img](https://i.imgur.com/cCy5qxL.png)</a> <br><br>
 <a href="https://dsc.gg/omnicraft" target="blank">![img](https://i.imgur.com/rt2yq49.png)</a> <br> <br>
 
 # Why Use SocialX
